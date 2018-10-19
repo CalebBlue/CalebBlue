@@ -1,0 +1,19 @@
+# CalebBlue
+void setup() {
+  size(600,400);
+  noStroke();
+}
+void draw() {
+  if (mousePressed) {
+    if (mouseY < width/4) {
+      fill(206, 43, 55);
+      rect(mouseX, mouseY, 25, 25);
+    } else if (mouseY < 2/4.0*width) {
+      fill(255);
+      rect(mouseX, mouseY, 25, 25);
+    } else {
+      fill(80, 66, 244);
+      rect(mouseX, mouseY, 25, 25);
+    }
+  }
+}
